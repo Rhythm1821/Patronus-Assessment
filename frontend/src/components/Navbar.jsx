@@ -78,7 +78,7 @@ function Navbar(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, mr: 2, color: theme.palette.text.primary }}
           >
-            FileManagement
+            PDFManagement
           </Typography>
 
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
