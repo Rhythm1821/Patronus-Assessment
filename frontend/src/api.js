@@ -12,7 +12,6 @@ api.interceptors.request.use(
         }
         const csrfTokenMatch = document.cookie.match(/csrftoken=(\w+)/)
         if (csrfTokenMatch) {
-            console.log(csrfTokenMatch[1])
             const csrfToken = csrfTokenMatch[1]
             config.headers['X-CSRFToken'] = csrfToken
         }
