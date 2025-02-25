@@ -47,7 +47,7 @@ docker-compose up --build
 Clone the repository:
 
 ```bash
-https://github.com/Rhythm1821/Patronus-Assessment.git
+git clone https://github.com/Rhythm1821/Patronus-Assessment.git
 ```
 
 ## Navigate to the Project Directory
@@ -61,6 +61,7 @@ Navigate to the frontend directory and install dependencies:
 
 ```bash
 cd frontend
+touch .env && echo "VITE_API_URL=http://localhost:8000" > .env
 npm install
 ```
 
@@ -86,9 +87,16 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
 Apply migrations to set up the database:
 
 ```bash
+python3 manage.py makemigrations
 python3 manage.py migrate
 ```
 
